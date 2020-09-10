@@ -21,6 +21,7 @@ class BitOperators:
 
 class BitManipulation:
     """
+
     Class that gather all basic Bit manipulation and demonstrate it with explained prints
     """
     b = BitOperators()
