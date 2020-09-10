@@ -21,7 +21,7 @@ class TestBitManipulation(TestCase):
         index:  4 3 2 1 0
         :return: bit at index 4 => 16 == 1
         """
-        self.assertEqual(1, self.bm.get_the_ith_bit(23,4))
+        self.assertEqual(1, self.bm.get_the_ith_bit(23, 4))
 
     def test_set_the_ith_bit(self):
         """
