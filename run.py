@@ -59,9 +59,10 @@ class BitManipulation:
         :param i: the index of the wished bit to be modified
         :return: new decimal number by the cleared bit
         """
-        mask = cls.b._not(cls._create_mask(i)) # equivalent to ~(1 << i)
+        mask = cls.b._not(cls._create_mask(i))  # equivalent to ~(1 << i)
         print(bin(mask))
-        print(f'create a mask: move 1 bit i={i} times left(multiply it by 2) and negate it (python show it different) --> {bin(mask)[2:]}')
+        print(f'create a mask: move 1 bit i={i} times left(multiply it by 2) and negate it (python show it different)'
+              f' --> {bin(mask)[2:]}')
         bit_is_cleared = binary_num & mask
         print(f'Commit AND operator between {bin(mask)[2:]} & {bin(binary_num)[2:]} --> {bit_is_cleared}')
         return bit_is_cleared
